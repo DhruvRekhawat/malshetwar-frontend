@@ -1,7 +1,7 @@
 import { Metadata } from "next"
 
 import { getCustomer, listCustomerOrders } from "@lib/data"
-import Overview from "@modules/account/components/overview"
+import Overview from "../../../../../modules/account/components/overview"
 import { notFound } from "next/navigation"
 
 export const metadata: Metadata = {

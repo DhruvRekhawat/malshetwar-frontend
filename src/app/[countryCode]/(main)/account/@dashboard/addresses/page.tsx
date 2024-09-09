@@ -1,7 +1,7 @@
 import { Metadata } from "next"
 import { notFound } from "next/navigation"
 
-import AddressBook from "@modules/account/components/address-book"
+import AddressBook from "../../../../../../modules/account/components/address-book"
 
 import { getCustomer, getRegion } from "@lib/data"
 
