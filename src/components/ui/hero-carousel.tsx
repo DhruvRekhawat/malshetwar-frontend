@@ -1,6 +1,6 @@
 import * as React from "react"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "../../components/ui/card"
+import { Button } from "../../components/ui/button"
 import Image1 from '@/app/assests/image-titan-1.webp'
 import {
   Carousel,
@@ -8,7 +8,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
+} from "../../components/ui/carousel"
 import Image from "next/image"
 export default function HeroCarousel() {
   const carouselItems = [
