@@ -7,7 +7,7 @@ import { enrichLineItems } from "../../../../modules/cart/actions"
 import Wrapper from "../../../../modules/checkout/components/payment-wrapper"
 import CheckoutForm from "../../../../modules/checkout/templates/checkout-form"
 import CheckoutSummary from "../../../../modules/checkout/templates/checkout-summary"
-import { getCart } from "../../../../lib/data"
+import { getCart } from "@lib/data"
 
 export const metadata: Metadata = {
   title: "Checkout",
