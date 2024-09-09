@@ -1,4 +1,4 @@
-import HeroCarousel from "@/components/ui/hero-carousel"
+import HeroCarousel from "../../../../components/ui/hero-carousel"
 import { Github } from "@medusajs/icons"
 import { Button, Heading } from "@medusajs/ui"
 
