@@ -1,6 +1,6 @@
 import { LineItem } from "@medusajs/medusa"
 
-import { enrichLineItems, retrieveCart } from "@modules/cart/actions"
+import { enrichLineItems, retrieveCart } from "../../../../modules/cart/actions"
 
 import CartDropdown from "../cart-dropdown"
 

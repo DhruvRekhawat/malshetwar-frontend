@@ -4086,6 +4086,13 @@ find-up@^4.0.0, find-up@^4.1.0:
     locate-path "^5.0.0"
     path-exists "^4.0.0"
 
+fix-insensitive-import@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/fix-insensitive-import/-/fix-insensitive-import-1.0.4.tgz"
+  integrity sha512-+n4RUdgaV5t3sEcMoHt2veZzB0m0AmYMfjVSiGowD09OvrqK9m7D4kOJPTBAt6/3k705TEeMuTvwJsqkvFT1aw==
+  dependencies:
+    line-by-line "^0.1.6"
+
 flat-cache@^3.0.4:
   version "3.1.0"
   resolved "https://registry.npmjs.org/flat-cache/-/flat-cache-3.1.0.tgz"
@@ -5186,6 +5193,11 @@ lilconfig@^2.0.5, lilconfig@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/lilconfig/-/lilconfig-2.1.0.tgz"
   integrity sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==
+
+line-by-line@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.npmjs.org/line-by-line/-/line-by-line-0.1.6.tgz"
+  integrity sha512-MmwVPfOyp0lWnEZ3fBA8Ah4pMFvxO6WgWovqZNu7Y4J0TNnGcsV4S1LzECHbdgqk1hoHc2mFP1Axc37YUqwafg==
 
 lines-and-columns@^1.1.6:
   version "1.2.4"

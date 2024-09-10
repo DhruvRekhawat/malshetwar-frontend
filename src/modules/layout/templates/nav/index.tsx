@@ -1,10 +1,10 @@
 import { Suspense } from "react"
 import Image from 'next/image'
 import Logo from "../../../../app/assests/LogoName-White.png"
-import { listRegions } from "@lib/data"
-import LocalizedClientLink from "@modules/common/components/localized-client-link"
-import CartButton from "@modules/layout/components/cart-button"
-import SideMenu from "@modules/layout/components/side-menu"
+import { listRegions } from "../../../../lib/data"
+import LocalizedClientLink from "../../../../modules/common/components/localized-client-link"
+import CartButton from "../../../../modules/layout/components/cart-button"
+import SideMenu from "../../../../modules/layout/components/side-menu"
 import {User,ShoppingCart} from "lucide-react"
 export default async function Nav() {
   const regions = await listRegions().then((regions) => regions)
