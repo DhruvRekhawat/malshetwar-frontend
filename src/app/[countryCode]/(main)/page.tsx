@@ -8,9 +8,9 @@ import { ProductCollectionWithPreviews } from "types/global"
 import { cache } from "react"
 
 export const metadata: Metadata = {
-  title: "Medusa Next.js Starter Template",
+  title: "Malshetwar Eyewear",
   description:
-    "A performant frontend ecommerce starter template with Next.js 14 and Medusa.",
+    "Discover the perfect fusion of Indian style and global vision at Malshetwar, your go-to online eyewear shop. Explore our vast collection of premium eyeglasses, sunglasses, and contact lenses, featuring both beloved Indian brands and international favorites. From classic designs to the latest fashion trends, we cater to diverse Indian tastes and preferences. Enjoy the convenience of virtual try-on technology, expert advice from our experienced optometrists, and swift delivery across India. Whether you're looking for everyday spectacles, stylish sun protection, or special occasion frames, Malshetwar offers quality eyewear solutions for men, women, and children. Experience the ease of online shopping with the trust of a proud Indian company. Visit Malshetwar today and see India in a whole new light!",
 }
 
 const getCollectionsWithProducts = cache(

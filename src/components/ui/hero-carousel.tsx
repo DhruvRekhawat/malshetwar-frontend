@@ -2,6 +2,9 @@ import * as React from "react"
 import { Card, CardContent } from "../../components/ui/card"
 import { Button } from "../../components/ui/button"
 import Image1 from '../../app/assests/image-titan-1.webp'
+import Image2 from '../../app/assests/image-titan-2.webp'
+import Image3 from '../../app/assests/image-titan-3.webp'
+
 import {
   Carousel,
   CarouselContent,
@@ -13,19 +16,19 @@ import Image from "next/image"
 export default function HeroCarousel() {
   const carouselItems = [
     {
-      image: "/placeholder.svg?height=400&width=800",
+      image: Image1,
       title: "Summer Collection",
       description: "Discover our latest summer styles",
       cta: "Shop Now",
     },
     {
-      image: "/placeholder.svg?height=400&width=800",
+      image: Image2,
       title: "New Arrivals",
       description: "Be the first to get our newest products",
       cta: "Explore",
     },
     {
-      image: "/placeholder.svg?height=400&width=800",
+      image: Image3,
       title: "Special Offer",
       description: "Get up to 50% off on selected items",
       cta: "View Deals",
@@ -41,7 +44,7 @@ export default function HeroCarousel() {
               <CardContent className="flex  items-center justify-center p-0">
                 <div className="relative w-full h-full">
                   <Image
-                    src={Image1}
+                    src={item.image}
                     width={1400}
                     height={400}
                     objectFit="fit"

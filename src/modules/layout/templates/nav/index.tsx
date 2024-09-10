@@ -46,7 +46,7 @@ export default async function Nav() {
                 href="/account"
                 data-testid="nav-account-link"
               >
-                <User></User>Account
+                <User className="font-light h-5"></User>Account
               </LocalizedClientLink>
             </div>
             <Suspense
