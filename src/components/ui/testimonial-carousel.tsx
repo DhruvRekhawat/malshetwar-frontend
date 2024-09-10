@@ -16,7 +16,7 @@ const testimonials = [
   {
     name: "Bob Smith",
     role: "Designer, CreativeCo",
-    content: "I've never used a more intuitive and powerful tool. It's a game-changer.",
+    content: "I&apos;ve never used a more intuitive and powerful tool. It&apos;s a game-changer.",
     avatar: "/placeholder.svg?height=40&width=40"
   },
   {
@@ -28,7 +28,7 @@ const testimonials = [
   {
     name: "David Brown",
     role: "Marketing Manager, BrandX",
-    content: "Our team's productivity has soared since we started using this. Amazing!",
+    content: "Our team&apos;s productivity has soared since we started using this. Amazing!",
     avatar: "/placeholder.svg?height=40&width=40"
   }
 ]

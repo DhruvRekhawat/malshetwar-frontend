@@ -3,7 +3,7 @@ import { Card, CardContent } from "../../components/ui/card"
 import { Button } from "../../components/ui/button"
 import Image1 from '../../app/assests/image-titan-1.webp'
 import Image2 from '../../app/assests/Image-titan-2.webp'
-import Image3 from '../../app/assests/Image-titan-3.webp'
+import Image3 from '../../app/assests/Image-titan-4.webp'
 
 import {
   Carousel,
