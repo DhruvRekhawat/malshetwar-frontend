@@ -12,6 +12,7 @@ import LineItemOptions from "../../../../modules/common/components/line-item-opt
 import LineItemPrice from "../../../../modules/common/components/line-item-price"
 import LocalizedClientLink from "../../../../modules/common/components/localized-client-link"
 import Thumbnail from "../../../../modules/products/components/thumbnail"
+import { ShoppingCart } from "lucide-react"
 
 const CartDropdown = ({
   cart: cartState,
@@ -77,12 +78,13 @@ const CartDropdown = ({
       onMouseLeave={close}
     >
       <Popover className="relative h-full">
-        <Popover.Button className="h-full">
+        <Popover.Button className="h-full flex justify-center items-center">
+        <ShoppingCart className="font-light h-5"></ShoppingCart>
           <LocalizedClientLink
             className="hover:text-ui-fg-base"
             href="/cart"
             data-testid="nav-cart-link"
-          >{`Cart (${totalItems})`}</LocalizedClientLink>
+          >{`(${totalItems})`}</LocalizedClientLink>
         </Popover.Button>
         <Transition
           show={cartDropdownOpen}

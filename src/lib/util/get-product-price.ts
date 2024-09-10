@@ -40,13 +40,13 @@ export function getProductPrice({
       calculated_price: formatAmount({
         amount: cheapestVariant.calculated_price,
         region,
-        includeTaxes: false,
+        includeTaxes: true,
       }),
       original_price_number: cheapestVariant.original_price,
       original_price: formatAmount({
         amount: cheapestVariant.original_price,
         region,
-        includeTaxes: false,
+        includeTaxes: true,
       }),
       price_type: cheapestVariant.calculated_price_type,
       percentage_diff: getPercentageDiff(

@@ -25,7 +25,7 @@ export default async function Nav() {
               className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
               data-testid="nav-store-link"
             >
-              <Image src={Logo} alt="Logo" height={50}></Image>
+              <Image src={Logo} alt="Logo" height={50} className="w-24 sm:w-40"></Image>
             </LocalizedClientLink>
           </div>
 
@@ -46,7 +46,7 @@ export default async function Nav() {
                 href="/account"
                 data-testid="nav-account-link"
               >
-                <User className="font-light h-5"></User>Account
+                <User className="font-light h-5"></User>Account 
               </LocalizedClientLink>
             </div>
             <Suspense
@@ -56,7 +56,7 @@ export default async function Nav() {
                   href="/cart"
                   data-testid="nav-cart-link"
                 >
-                  Cart (0)
+                  <ShoppingCart></ShoppingCart>
                 </LocalizedClientLink>
               }
             >

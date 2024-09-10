@@ -1,11 +1,22 @@
 import { Product } from "@medusajs/medusa"
 import { Metadata } from "next"
-
+import Image from "next/image"
+import CollectionImage from '../../../app/assests/demo-glasses-img-01.webp'
+import BannerImage from '../../../app/assests/demo-glasses-banner.webp'
 import { getCollectionsList, getProductsList, getRegion } from "@lib/data"
 import FeaturedProducts from "@modules/home/components/featured-products"
 import Hero from "@modules/home/components/hero"
 import { ProductCollectionWithPreviews } from "types/global"
 import { cache } from "react"
+import TestimonialCarousel from "components/ui/testimonial-carousel"
+import Link from "next/link"
+
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../../../components/ui/accordian"
 
 export const metadata: Metadata = {
   title: "Malshetwar Eyewear",
@@ -69,11 +80,50 @@ export default async function Home({
   return (
     <>
       <Hero />
+      <div className=" my-12 py-12 grid grid-cols-1 sm:grid-cols-2 place-items-center ">
+        <div className="flex flex-col justify-center items-center sm:items-start gap-4">
+        <h2 className=" font-semibold text-ui-fg-muted text-lg">Contemporary Design</h2>
+        <h1 className=" text-3xl sm:w-[60%] sm:text-4xl text-center sm:text-start">The Spring <span className=" font-bold text-sky-900 ">Summer</span> Cool Collection.</h1>
+        <Link href="/in/collections/featured"><button className="py-6 px-12 bg-sky-900 text-lg text-white text-bold rounded-full my-4 hover:translate-x-1 hover:-translate-y-1 shadow-md transition-all">Shop Collections </button></Link>
+        </div>
+        <Image src={CollectionImage} alt=""></Image>
+      </div>
       <div className="py-12">
         <ul className="flex flex-col gap-x-6">
           <FeaturedProducts collections={collections} region={region} />
         </ul>
       </div>
+      <div className="w-full flex justify-center items-center p-12 my-12">
+        <div className="">
+      <Image src={BannerImage} alt="banner" className="object-cover"></Image>
+      </div>
+      </div>
+      <TestimonialCarousel></TestimonialCarousel>
+{/* 
+      <div className="w-full h-44 bg-sky-200 flex justify-center items-center my-12">
+      <Accordion type="single" collapsible className="w-full">
+      <AccordionItem value="item-1">
+        <AccordionTrigger>Is it accessible?</AccordionTrigger>
+        <AccordionContent>
+          Yes. It adheres to the WAI-ARIA design pattern.
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-2">
+        <AccordionTrigger>Is it styled?</AccordionTrigger>
+        <AccordionContent>
+          Yes. It comes with default styles that matches the other
+          components&apos; aesthetic.
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-3">
+        <AccordionTrigger>Is it animated?</AccordionTrigger>
+        <AccordionContent>
+          Yes. It's animated by default, but you can disable it if you prefer.
+        </AccordionContent>
+      </AccordionItem>
+    </Accordion>
+
+      </div> */}
     </>
   )
 }
