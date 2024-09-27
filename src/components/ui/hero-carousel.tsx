@@ -1,3 +1,5 @@
+"use client"
+
 import * as React from "react"
 import { Card, CardContent } from "../../components/ui/card"
 import { Button } from "../../components/ui/button"
@@ -13,6 +15,7 @@ import {
   CarouselPrevious,
 } from "../../components/ui/carousel"
 import Image from "next/image"
+import Autoplay from "embla-carousel-autoplay"
 export default function HeroCarousel() {
   const carouselItems = [
     {
@@ -35,8 +38,40 @@ export default function HeroCarousel() {
     },
   ]
 
+
+  const [api, setApi] = React.useState<any>()
+  const [current, setCurrent] = React.useState(0)
+
+  React.useEffect(() => {
+    if (!api) {
+      return
+    }
+
+    setCurrent(api.selectedScrollSnap() + 1)
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1)
+    })
+  }, [api])
+
+  React.useEffect(() => {
+    if (!api) return
+
+    const intervalId = setInterval(() => {
+      api.scrollNext()
+    }, 2000) // Change slide every 3 seconds
+
+    return () => clearInterval(intervalId)
+  }, [api])
+
   return (
-    <Carousel className=" max-w-[90%] mx-auto  mt-6 flex justify-center items-center">
+    <Carousel 
+    setApi={setApi}
+    opts={{
+      loop:true,
+    }}
+
+    className=" max-w-[90%] mx-auto  mt-6 flex justify-center items-center">
       <CarouselContent>
         {carouselItems.map((item, index) => (
           <CarouselItem key={index} className=" basis-100" >

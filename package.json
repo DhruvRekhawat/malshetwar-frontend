@@ -38,6 +38,7 @@
     "@stripe/stripe-js": "^1.29.0",
     "algoliasearch": "^4.20.0",
     "axios": "^1.6.7",
+    "embla-carousel-autoplay": "^8.3.0",
     "embla-carousel-react": "^8.2.1",
     "fix-insensitive-import": "^1.0.4",
     "lodash": "^4.17.21",
