@@ -71,11 +71,11 @@ export default function HeroCarousel() {
       loop:true,
     }}
 
-    className=" max-w-[90%] mx-auto  mt-6 flex justify-center items-center">
+    className=" max-w-[90%] mx-auto mt-6 flex justify-center items-center">
       <CarouselContent>
         {carouselItems.map((item, index) => (
           <CarouselItem key={index} className=" basis-100" >
-            <Card className="border-none sm:w-[700px] sm:h-[200px] rounded-md  ">
+            <Card className="border-none w-[350px] h-[100px] sm:w-[700px] sm:h-[200px] rounded-md  ">
               <CardContent className="flex  items-center justify-center p-0">
                 <div className="relative w-full h-full">
                   <Image
