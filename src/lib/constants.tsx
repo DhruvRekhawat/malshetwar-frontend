@@ -26,6 +26,10 @@ export const paymentInfoMap: Record<
     title: "PayPal",
     icon: <PayPal />,
   },
+  razorpay: {
+    title: "Razorpay",
+    icon: <CreditCard />,
+  },
   manual: {
     title: "Test payment",
     icon: <CreditCard />,
