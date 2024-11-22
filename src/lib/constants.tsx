@@ -22,6 +22,10 @@ export const paymentInfoMap: Record<
     title: "Bancontact",
     icon: <Bancontact />,
   },
+  pp_razorpay_razorpay: {
+    title: "Razorpay",
+    icon: <CreditCard />,
+  },
   paypal: {
     title: "PayPal",
     icon: <PayPal />,
